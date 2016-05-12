@@ -14,6 +14,7 @@
 		679AF5B41CE3F6B8002CD718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679AF5B21CE3F6B8002CD718 /* LaunchScreen.storyboard */; };
 		679AF5BF1CE3F6B8002CD718 /* AppCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AF5BE1CE3F6B8002CD718 /* AppCardsTests.swift */; };
 		679AF5CA1CE3F6B8002CD718 /* AppCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AF5C91CE3F6B8002CD718 /* AppCardsUITests.swift */; };
+		679AF5D81CE3F6CF002CD718 /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AF5D71CE3F6CF002CD718 /* AppCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		679AF5C51CE3F6B8002CD718 /* AppCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		679AF5C91CE3F6B8002CD718 /* AppCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardsUITests.swift; sourceTree = "<group>"; };
 		679AF5CB1CE3F6B8002CD718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		679AF5D71CE3F6CF002CD718 /* AppCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				679AF5A91CE3F6B8002CD718 /* AppDelegate.swift */,
 				679AF5AB1CE3F6B8002CD718 /* ViewController.swift */,
+				679AF5D71CE3F6CF002CD718 /* AppCard.swift */,
 				679AF5AD1CE3F6B8002CD718 /* Main.storyboard */,
 				679AF5B01CE3F6B8002CD718 /* Assets.xcassets */,
 				679AF5B21CE3F6B8002CD718 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				679AF5AC1CE3F6B8002CD718 /* ViewController.swift in Sources */,
 				679AF5AA1CE3F6B8002CD718 /* AppDelegate.swift in Sources */,
+				679AF5D81CE3F6CF002CD718 /* AppCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
