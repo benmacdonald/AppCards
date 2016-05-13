@@ -1,5 +1,8 @@
 # AppCards
 
+Easy way to create "app cards" in swift.
+Download and run the project for an example.
+
 #License
 
 The MIT License (MIT)
