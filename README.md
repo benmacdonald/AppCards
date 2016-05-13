@@ -3,6 +3,8 @@
 Easy way to create "app cards" in swift.
 Download and run the project for an example.
 
+![alt tag](https://github.com/benmacdonald/AppCards/blob/master/AppCards/example.png)
+
 #License
 
 The MIT License (MIT)
