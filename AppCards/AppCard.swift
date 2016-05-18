@@ -16,12 +16,24 @@ class AppCard: UIView {
     let offsetHeight: CGFloat = 3
     let screenSize: CGRect = UIScreen.mainScreen().bounds
     
-    
-    
     func addTopImage(image: UIImageView){
         
+        let maskView = CAShapeLayer()
+        maskView.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).CGPath
         image.frame = CGRectMake(0, -2, image.bounds.width, image.bounds.height)
+        image.layer.mask = maskView
         self.addSubview(image)
+    }
+    
+    @nonobjc
+    func addTopImage(image: UIImage){
+        let topImage = UIImageView(image: image)
+        let maskView = CAShapeLayer()
+        maskView.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).CGPath
+        topImage.frame = CGRectMake(0, -2, topImage.bounds.width, topImage.bounds.height)
+        topImage.layer.mask = maskView
+        self.addSubview(topImage)
+        
     }
     
     func addLabel(label: UILabel){
@@ -30,6 +42,17 @@ class AppCard: UIView {
         label.textAlignment = NSTextAlignment.Center
         self.addSubview(label)
         
+    }
+    
+    @nonobjc
+    func addLabel(label: String){
+        
+        let stringLabel = UILabel()
+        stringLabel.font = UIFont(name: ".SFUIDisplay-Bold", size: 36)
+        stringLabel.text = label
+        stringLabel.frame = CGRectMake((bounds.width/2)-100, bounds.height*0.5, 200,200)
+        stringLabel.textAlignment = NSTextAlignment.Center
+        self.addSubview(stringLabel)
     }
     
     func addButton(button: UIButton){
@@ -41,6 +64,8 @@ class AppCard: UIView {
     }
     
     override func layoutSubviews() {
+        
+        self.backgroundColor = UIColor.whiteColor()
         self.frame = CGRectMake(0, 0, bounds.width,bounds.height)
         self.center = CGPointMake(screenSize.width/2, screenSize.height/2)
         self.layer.cornerRadius = 25

@@ -15,18 +15,15 @@ class ViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(red: 232/255, green: 232/255, blue: 232/255, alpha: 1)
         
-        let appCard = AppCard(frame: CGRectMake(20, 58, 334, 522))
-        appCard.backgroundColor = UIColor.whiteColor()
+        
+        //Generic App Card
+        let appCard = AppCard(frame: CGRectMake(20, 58, 310, 485))
     
         //Adding a Image to the view, the image always apears at the top
-        let myImage = UIImageView(image: UIImage(named: "image"))
-        appCard.addTopImage(myImage)
+        appCard.addTopImage(UIImage(named: "image")!)
         
         //Adding the Label
-        let myLabel = UILabel()
-        myLabel.font = UIFont(name: ".SFUIDisplay-Bold", size: 36)
-        myLabel.text = "App Cards"
-        appCard.addLabel(myLabel)
+        appCard.addLabel("AppCards")
         
         //Adding the button
         let myButton = UIButton()
@@ -34,6 +31,8 @@ class ViewController: UIViewController {
         appCard.addButton(myButton)
         
         self.view.addSubview(appCard)
+        
+        
         
     }
 

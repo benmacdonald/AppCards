@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6716172F1CEBE5CA008550ED /* WeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6716172E1CEBE5CA008550ED /* WeatherCard.swift */; };
+		671617311CEC073D008550ED /* AppCardsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671617301CEC073D008550ED /* AppCardsPageViewController.swift */; };
+		671617331CEC0C50008550ED /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671617321CEC0C50008550ED /* WeatherViewController.swift */; };
 		679AF5AA1CE3F6B8002CD718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AF5A91CE3F6B8002CD718 /* AppDelegate.swift */; };
 		679AF5AC1CE3F6B8002CD718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AF5AB1CE3F6B8002CD718 /* ViewController.swift */; };
 		679AF5AF1CE3F6B8002CD718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679AF5AD1CE3F6B8002CD718 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6716172E1CEBE5CA008550ED /* WeatherCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCard.swift; sourceTree = "<group>"; };
+		671617301CEC073D008550ED /* AppCardsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCardsPageViewController.swift; sourceTree = "<group>"; };
+		671617321CEC0C50008550ED /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		679AF5A61CE3F6B8002CD718 /* AppCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		679AF5A91CE3F6B8002CD718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679AF5AB1CE3F6B8002CD718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				679AF5A91CE3F6B8002CD718 /* AppDelegate.swift */,
+				671617301CEC073D008550ED /* AppCardsPageViewController.swift */,
 				679AF5AB1CE3F6B8002CD718 /* ViewController.swift */,
+				671617321CEC0C50008550ED /* WeatherViewController.swift */,
 				679AF5D71CE3F6CF002CD718 /* AppCard.swift */,
+				6716172E1CEBE5CA008550ED /* WeatherCard.swift */,
 				679AF5AD1CE3F6B8002CD718 /* Main.storyboard */,
 				679AF5B01CE3F6B8002CD718 /* Assets.xcassets */,
 				679AF5B21CE3F6B8002CD718 /* LaunchScreen.storyboard */,
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				679AF5AC1CE3F6B8002CD718 /* ViewController.swift in Sources */,
+				671617331CEC0C50008550ED /* WeatherViewController.swift in Sources */,
+				671617311CEC073D008550ED /* AppCardsPageViewController.swift in Sources */,
 				679AF5AA1CE3F6B8002CD718 /* AppDelegate.swift in Sources */,
+				6716172F1CEBE5CA008550ED /* WeatherCard.swift in Sources */,
 				679AF5D81CE3F6CF002CD718 /* AppCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +498,7 @@
 				679AF5D01CE3F6B8002CD718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		679AF5D11CE3F6B8002CD718 /* Build configuration list for PBXNativeTarget "AppCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +507,7 @@
 				679AF5D31CE3F6B8002CD718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		679AF5D41CE3F6B8002CD718 /* Build configuration list for PBXNativeTarget "AppCardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +516,7 @@
 				679AF5D61CE3F6B8002CD718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
